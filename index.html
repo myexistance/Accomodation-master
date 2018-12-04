@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+
+    <!-- Bootstrap CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="mainsass/css/custom.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="swiper/dist/css/swiper.min.css"> -->
+    <!-- CSS -->
+
+    <!-- JAVASCRIPT -->
+    <!-- JQuery -->
+
+
+    <!-- Bootstrap tooltips -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> -->
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+
+    <title>Pure NZ</title>
+  </head>
+  <!-- <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+  <a class="navbar-brand" href="index.html"><strong>ROOM 121</strong></a>
+  </nav> -->
+  <img class="pure" src="images/pure.jpg" alt="">
+
+  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img class="first-slide img-fluid" src="images/Berlin1.png" alt="First slide">
+           <div class="container">
+             <div class="carousel-caption text-left">
+               <h1>Studio</h1>
+               <p>.....</p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <img class="second-slide img-fluid" src="images/Berlin2.png" alt="Second slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h1>121</h1>
+               <p>.....</p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <img class="third-slide img-fluid" src="images/Berlin3.png" alt="Third slide">
+           <div class="container">
+             <div class="carousel-caption text-right">
+               <h1>Studio.</h1>
+               <p>.....</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div> -->
+  <body>
+    <br>
+<!-- Reserve your stay  Button -->
+      <div class="text-center">
+          <button type="button" class="btn btn-danger link-modal" data-toggle="modal" data-target="#exampleModalBottom">
+            Reserve your stay
+          </button>
+      </div>
+
+
+<!-- Modal -->
+<div class="modal fade bottom" id="exampleModalBottom" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fluid modal-frame modal-bottom" role="document">
+
+    <div class="modal-content">
+
+          <div class="modal-header">
+            <!-- indication of user input -->
+
+            <div>
+            <h5 class="indicateFont" id="noDays"></h5>
+            </div>
+            <div>
+            <h5 class="indicateFont" id="numGuest"></h5>
+            </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+              <li class="nav-item tColor">
+                <a class="nav-link active" id="date-tab" data-toggle="tab" href="#date" role="tab" aria-controls="date" aria-selected="true">Dates & Guests</a>
+              </li>
+              <li class="nav-item tColor">
+                <a class="nav-link" id="filtered-tab" data-toggle="tab" href="#filtered" role="tab" aria-controls="filtered" aria-selected="false">Filtered</a>
+              </li>
+
+        </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="date" role="tabpanel" aria-labelledby="date-tab">
+                <br>
+
+                <form id="form" class="container text-center">
+
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <label for="startDate"> Check in : </label>
+                     <input class="dateWidth" type="text" id="startDate" name="startDate" autocomplete="off">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+                     <label for="endDate"> Check out : </label>
+                     <input class="dateWidth" type="text" id="endDate" name="endDate" autocomplete="off">
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+
+
+                     <!-- <button type="button" name="button" onclick="dateDiff()"><a href="#guest" data-toggle="tab">next</a></button> -->
+
+                     <p>How many guests are staying?</p>
+                     <select id="noGuest" name="numberOfGuests" class="custom-select select__Length">
+                       
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+                     </select>
+                     <br>
+                     <br>
+                     <p>Add Breakfast?</p>
+                     <select id="bFast" name="breakFast" class="custom-select select__Length">
+                       <option>Yes</option>
+                       <option>No</option>
+                     </select>
+                     <br>
+                     <br>
+                     <button type="button" name="button" onclick="calculate(); accom()"><a href="#filtered" data-toggle="tab">next</a></button>
+
+
+
+                 </form>
+
+              </div>
+<!-- Filtered Result -->
+<div class="tab-pane fade" id="filtered" role="tabpanel" aria-labelledby="filtered-tab">
+  <div class ="container-fluid"> <!-- CONTAINER STARTS -->
+  <div class="row"> <!-- ROW STARTS -->
+
+<!-- Hostel30 WINDOW     -->
+<hr>
+    <div class="col-sm-12 col-md-6 my__col" id="hostel30Get">
+        <div class="results__image no-padding">
+          <img class= "accomodation__img" id="hostel30" src="images/Hostel30/Hostel1.jpeg" alt="Hostel30">
+        </div>
+        <div class="results__description">
+          <h3 class="results__price no-padding">&nbsp;&nbsp;$30/day</h3>
+          <h4 class ="results__guest no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Guests: 1 Person</h4>
+          <h4 class ="results__stay no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Availability: min 1 night, max 10 nights</h4>
+          &nbsp;&nbsp;&nbsp;
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button class="makeBooking" data-toggle="modal" href="#stack2" onclick="makeBooking30()">Make Booking</button>
+
+        </div>
+        <hr>
+    </div>
+
+<!-- Hostel30 Modal -->
+<!-- <div id="stack2" class="modal fade bottom" tabindex="-1" data-focus-on="input:first"> -->
+<div id="stack2" class="modal">
+  <div class="modal-dialog modal-frame modal-bottom" role="document">
+  <div class="modal-body">
+    <div class="container modalContain" id="modal_hostel30">
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+              <span class="close">&times;</span>
+              <div id="map"></div>
+              <div class="row">
+                  <div class="col-sm-9 modal__info">
+                      <div class="modal__name">
+                        <h1 class="modal__text"> Booking for</h1>
+                        <div>
+                        <h5 class="indicateFont" id="totalCostM"></h5>
+                        </div>
+                        <div>
+                        <h5 class="indicateFont" id="noDaysM"></h5>
+                        </div>
+                        <div>
+                        <h5 class="indicateFont" id="numGuestM"></h5>
+                        </div>
+                        <div>
+                          <h5 class="indicateFont" id="bFastM"></h5>
+                        </div>
+
+                        <h6 class="indicateFont">Ref#4747883</h6>
+                      </div>
+                      <div class="modal__address">
+                          <h6 class="indicateFont">O'Reily Avenue, Te Aro, Wellington</h6>
+                          <h6 class="indicateFont">(04) 473 7697</h6>
+                          <button class="makeBooking">Confirm</button>
+                      </div>
+                      <br>
+                  </div>
+              </div>
+          </div>
+
+  </div>
+
+</div>
+</div>
+
+
+
+<!-- Hostel157 WINDOW     -->
+<hr>
+      <div class="col-sm-12 col-md-6 my__col" id="hostel157Get">
+          <div class="results__image no-padding">
+            <img class= "accomodation__img" id="hostel157" src="images/Hostel157/2Hostel1.jpeg" alt="Hostel157">
+          </div>
+          <div class="results__description">
+            <h3 class="results__price no-padding">&nbsp;&nbsp;$157/day</h3>
+            <h4 class ="results__guest no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Guests: 1-2 People</h4>
+            <h4 class ="results__stay no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Availability: min 1 night, max 5 nights</h4>
+            &nbsp;&nbsp;&nbsp;
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star unchecked"></span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <button class="makeBooking" data-toggle="modal" href="#stack2" onclick="makeBooking157()">Make Booking</button>
+
+          </div>
+          <hr>
+      </div>
+
+<!-- Hostel157 Modal -->
+<div id="stack2" class="modal hide fade" tabindex="-1" data-focus-on="input:first">
+  <div class="modal-dialog modal-fluid modal-frame modal-bottom" role="document">
+  <div class="modal-body">
+    <div class="container modalContain" id="modal_hostel157">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div id="mapHostel157"></div>
+              <div class="row">
+                <div class="col-sm-9 modal__info">
+                    <div class="modal__name">
+                      <h1 class="modal__text"> Booking for</h1>
+                      <div>
+                      <h5 class="indicateFont" id="totalCostM"></h5>
+                      </div>
+                      <div>
+                      <h5 class="indicateFont" id="noDaysM"></h5>
+                      </div>
+                      <div>
+                      <h5 class="indicateFont" id="numGuestM"></h5>
+                      </div>
+                      <div>
+                        <h5 class="indicateFont" id="bFastM"></h5>
+                      </div>
+
+                      <h6 class="indicateFont">Ref#4747883</h6>
+                    </div>
+                    <div class="modal__address">
+                        <h6 class="indicateFont">O'Reily Avenue, Te Aro, Wellington</h6>
+                        <h6 class="indicateFont">(04) 473 7697</h6>
+                        <button class="makeBooking">Confirm</button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Motel WINDOW     -->
+<hr>
+      <div class="col-sm-12 col-md-6 my__col" id="motelGet">
+        <div class="results__image no-padding">
+          <img class= "accomodation__img" id="Motel" src="images/Motel/Motel1.jpeg" alt="Motel">
+        </div>
+        <div class="results__description">
+          <h3 class="results__price no-padding">&nbsp;&nbsp;$90/day</h3>
+          <h4 class ="results__guest no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Guests: 2-4 People</h4>
+          <h4 class ="results__stay no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Availability: min 3 nights, max 10 nights</h4>
+          &nbsp;&nbsp;&nbsp;
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button class="makeBooking" data-toggle="modal" href="#stack2" onclick="makeBooking90()">Make Booking</button>
+
+        </div>
+        <hr>
+    </div>
+
+<!-- Motel Modal -->
+<hr>
+<div id="stack2" class="modal hide fade" tabindex="-1" data-focus-on="input:first">
+  <div class="modal-dialog modal-fluid modal-frame modal-bottom" role="document">
+  <div class="modal-body">
+    <div class="container modalContain" id="modal_motel90">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div id="mapMotel"></div>
+              <div class="row">
+                <div class="col-sm-9 modal__info">
+                    <div class="modal__name">
+                      <h1 class="modal__text"> Booking for</h1>
+                      <div>
+                      <h5 class="indicateFont" id="totalCostM"></h5>
+                      </div>
+                      <div>
+                      <h5 class="indicateFont" id="noDaysM"></h5>
+                      </div>
+                      <div>
+                      <h5 class="indicateFont" id="numGuestM"></h5>
+                      </div>
+                      <div>
+                        <h5 class="indicateFont" id="bFastM"></h5>
+                      </div>
+
+                      <h6 class="indicateFont">Ref#4747883</h6>
+                    </div>
+                    <div class="modal__address">
+                        <h6 class="indicateFont">O'Reily Avenue, Te Aro, Wellington</h6>
+                        <h6 class="indicateFont">(04) 473 7697</h6>
+                        <button class="makeBooking">Confirm</button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- House WINDOW     -->
+    <div class="col-sm-12 col-md-6 my__col" id="houseGet">
+        <div class="results__image no-padding">
+          <img class= "accomodation__img" id="House" src="images/House/House1.jpeg" alt="House">
+        </div>
+        <div class="results__description">
+          <h3 class="results__price no-padding">&nbsp;&nbsp;$240/day</h3>
+          <h4 class ="results__guest no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Guests: 1-4 People</h4>
+          <h4 class ="results__stay no-padding">&nbsp;&nbsp;&nbsp;&nbsp;Availability: min 2 nights, max 15 nights</h4>
+          &nbsp;&nbsp;&nbsp;
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button class="makeBooking" data-toggle="modal" href="#stack2" onclick="makeBooking240()">Make Booking</button>
+
+        </div>
+        <hr>
+      </div>
+
+<!-- House modal     -->
+<div id="stack2" class="modal hide fade" tabindex="-1" data-focus-on="input:first">
+  <div class="modal-dialog modal-fluid modal-frame modal-bottom" role="document">
+  <div class="modal-body">
+    <div class="container modalContain" id="modal_house240">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div id="mapHouse"></div>
+              <div class="row">
+                <div class="col-sm-9 modal__info">
+                    <div class="modal__name">
+                      <h1 class="modal__text"> Booking for</h1>
+                      <div>
+                      <h5 class="indicateFont" id="totalCostM"></h5>
+                      </div>
+                      <div>
+                      <h5 class="indicateFont" id="noDaysM"></h5>
+                      </div>
+                      <div>
+                      <h5 class="indicateFont" id="numGuestM"></h5>
+                      </div>
+                      <div>
+                        <h5 class="indicateFont" id="bFastM"></h5>
+                      </div>
+
+                      <h6 class="indicateFont">Ref#4747883</h6>
+                    </div>
+                    <div class="modal__address">
+                        <h6 class="indicateFont">O'Reily Avenue, Te Aro, Wellington</h6>
+                        <h6 class="indicateFont">(04) 473 7697</h6>
+                        <button class="makeBooking">Confirm</button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+</div>
+</div>
+
+    </div><!--row-->
+ </div> <!--container-->
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/js/mdb.min.js"></script>
+     <!-- <script src="swiper/dist/js/swiper.min.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmYvU9QpwVlxE5r5kW8l9i1NL8Km9Zy7s&callback=initMap"
+   async defer></script>
+  </body>
+</html>
